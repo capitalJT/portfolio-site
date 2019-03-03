@@ -1,0 +1,17 @@
+/* # Sidebars
+---------------------------------------------------------------------------------------------------- */
+.sidebar {
+  margin-bottom: 20px;
+  .widget {
+    background-color: $white;
+    padding: 20px;
+    border: solid thin $gray-200;
+  }
+  //@include media-breakpoint-up(md){
+  //  .widget{
+  //    padding-left: 40px;
+  //    padding-right: 40px;
+  //  }
+  //}
+}
+

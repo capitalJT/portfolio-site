@@ -1,0 +1,94 @@
+/* ## Entries
+--------------------------------------------- */
+
+.entry {
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: solid thin $gray-200;
+  //background-color: red;
+  ol,ul{
+    margin-bottom: 28px;
+    margin-left: 40px;
+  }
+  @include media-breakpoint-up(md){
+    //background-color: pink;
+    //margin-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.entry-content{
+  ol > li {
+    list-style-type: decimal;
+  }
+  ul > li {
+    list-style-type: disc;
+  }
+
+  // children lists
+  ol ol,
+  ul ul {
+    margin-bottom: 0;
+  }
+}
+
+.entry-content code {
+  background-color: #333;
+  color: #eee;
+}
+
+/* ## Entry Meta
+--------------------------------------------- */
+
+/*p.entry-meta {*/
+/*font-size: 16px;*/
+/*font-size: 1.6rem;*/
+/*margin-bottom: 0;*/
+/*}*/
+
+.entry-header .entry-meta {
+  margin-bottom: 24px;
+}
+
+.entry-footer .entry-meta {
+  border-top: 1px solid $gray-200;
+  padding-top: 15px;
+  margin-bottom: 0;
+}
+
+.entry-categories,
+.entry-tags {
+  display: block;
+}
+
+.entry-comments-link::before {
+  content: "\2014";
+  margin: 0 6px 0 2px;
+}
+
+// JT - This is to style the post thumbnail image
+.entry-image-link {
+  img{
+    width: 100%;
+    @include global-hover-interaction;
+  }
+  //@include media-breakpoint-up(sm){}
+  @include media-breakpoint-up(md){
+    img{
+      max-width: 400px;
+    }
+  }
+
+  @include media-breakpoint-up(lg){
+    img {
+      max-width: 320px;
+    }
+  }
+  @include media-breakpoint-up(xl){
+    img{
+      max-width: 480px;
+    }
+  }
+}

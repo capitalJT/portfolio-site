@@ -1,0 +1,40 @@
+.p2w-front-page{
+  .page.entry{
+    border: solid thin orange;
+  }
+}
+
+
+.p2w-front-page{
+  .widget ul > li {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+.p2w-front-page{
+  .site-inner{
+    max-width: 100%;
+  }
+  // TODO: Check out this example of using a SASS map
+  .wrap {
+    //max-width: map-get($container-max-widths, xl);
+  }
+}
+
+.front-page-widget{
+  .container{
+    padding-top: $global-padding;
+    padding-bottom: $global-padding;
+  }
+}
+
+#front-page-1,
+#front-page-2,
+#front-page-3{
+  @include media-breakpoint-down(md){
+    img{
+      max-width: 320px;
+    }
+  }
+}

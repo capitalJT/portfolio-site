@@ -1,0 +1,15 @@
+#front-page-5{
+  .card-body{
+    padding: 2rem;
+  }
+  img{
+    max-width: 120px;
+  }
+}
+
+#front-page-5 .bg-primary{
+  background-image: url('../images/front-page-5-bg-img.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

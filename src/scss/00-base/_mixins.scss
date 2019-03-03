@@ -1,0 +1,39 @@
+// Font Weights
+@mixin global-font-weight-lite {
+  font-weight: 100;
+}
+
+@mixin global-font-weight-med {
+  font-weight: 300;
+}
+
+@mixin global-font-weight-bold {
+  font-weight: 500;
+}
+
+@mixin global-font-weight-heavy {
+  font-weight: 700;
+}
+
+// Font Family
+@mixin global-font-family-sans-serif {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+@mixin global-font-family-serif {
+  font-family: Helvetica, Arial, serif;
+}
+
+
+@mixin global-card-shadow{
+  box-shadow: 0 8px 8px -6px $black_45;
+}
+
+@mixin global-hover-interaction {
+  transition: all $global-speed $global-ease;
+  &:hover{
+    transform: translateY(-5px);
+    transition: all $global-ease $global-ease;
+    box-shadow: $global-box-shadow;
+  }
+}

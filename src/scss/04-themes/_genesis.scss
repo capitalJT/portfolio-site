@@ -1,0 +1,66 @@
+/* ## Genesis
+--------------------------------------------- */
+
+.breadcrumb {
+  background-color: #fff;
+  font-size: 16px;
+  font-size: 1.6rem;
+  margin-bottom: 1px;
+  padding: 12px 30px;
+}
+
+.after-entry,
+.archive-description,
+.author-box {
+  background-color: #fff;
+  font-size: 18px;
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+  //padding: 20px 60px;
+  padding: 20px;
+}
+
+.archive-description p:last-child,
+.author-box p:last-child {
+  margin-bottom: 0;
+}
+
+
+
+.site-inner,
+.wrap {
+  margin: 0 auto;
+  //max-width: 1140px;
+  @extend .container;
+}
+
+
+
+/* ### Content */
+.content {
+  width: 100%;
+}
+
+/* ### Primary Sidebar */
+.sidebar-primary {
+  width: 100%;
+}
+
+.full-width-content .content {
+  width: 100%;
+  margin: 0;
+}
+
+@include media-breakpoint-up(md){
+  .content, .sidebar-primary{
+    float: right;
+  }
+
+  .content{
+    width: 69%;
+    margin-right: 2%;
+  }
+  .sidebar-primary {
+    width: 29%;
+  }
+}

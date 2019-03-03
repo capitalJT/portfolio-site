@@ -1,0 +1,83 @@
+/* # Site Header
+---------------------------------------------------------------------------------------------------- */
+//.site-header .wrap{
+//  @extend .container;
+//}
+
+
+/* ## Title Area
+--------------------------------------------- */
+
+.title-area {
+  float: left;
+  padding: 10px 0;
+  width: 100%;
+  //border: solid thin red;
+  //@include media-breakpoint-up(md){
+  //  border: solid thin blue;
+  //}
+  @include media-breakpoint-up(lg){
+    //border: solid thin orange;
+    width: 300px;
+  }
+}
+
+.header-image .title-area {
+  margin: 0 auto;
+  max-width: 300px;
+  padding: 0;
+}
+
+.header-full-width .title-area {
+  float: none;
+  width: 100%;
+}
+
+.site-title {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.site-title a,
+.site-title a:focus,
+.site-title a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.site-description {
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.site-description,
+.site-title {
+  margin-bottom: 0;
+}
+
+.header-image .site-description,
+.header-image .site-title {
+  display: block;
+  text-indent: -9999px;
+}
+
+.site-header {
+  background-color: #fff;
+  border-bottom: solid thin $gray-200;
+  @include media-breakpoint-up(md){
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.header-image .site-title > a {
+  background-position: center !important;
+  background-size: contain !important;
+  float: left;
+  min-height: 80px;
+  width: 100%;
+}
+
+.site-header{
+  //border: solid thin $primary;
+}

@@ -1,0 +1,49 @@
+{
+  "name": "plan-2-win",
+  "version": "1.0.0",
+  "description": "Github project link: https://github.com/copyblogger/genesis-sample/",
+  "main": "gulpfile.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdaptivePlanning/plan-2-win.git"
+  },
+  "author": {
+    "name": "Jabal Torres",
+    "email": "jtorres@adaptiveinsights.com",
+    "url": "https://www.adaptiveinsights.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdaptivePlanning/plan-2-win/issues"
+  },
+  "homepage": "https://github.com/AdaptivePlanning/plan-2-win#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.4.7",
+    "bootstrap": "^4.2.1",
+    "browser-sync": "^2.26.3",
+    "cssnano": "^4.1.8",
+    "fancy-log": "^1.3.3",
+    "gulp": "github:gulpjs/gulp",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-jshint": "^2.1.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1",
+    "jshint": "^2.9.7",
+    "jshint-stylish": "^2.2.1",
+    "npm": "^6.7.0"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
+  }
+}
