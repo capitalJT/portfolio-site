@@ -234,16 +234,6 @@ genesis_register_sidebar( array(
 ) );
 
 
-//* JT - Customize the entire footer
-//remove_action( 'genesis_footer', 'genesis_do_footer' );
-//add_action( 'genesis_footer', 'sp_custom_footer' );
-//function sp_custom_footer() {
-//    ?>
-<!--    <p>&copy; --><?php //echo date("Y"); ?><!-- <a href="http://portfolio-site.com/">Portfolio Site</a> &middot; All Rights Reserved</p>-->
-<!--    --><?php
-//}
-
-
 //* JT - Add widget before blog roll
 genesis_register_sidebar( array(
     'id' => 'before-blog',

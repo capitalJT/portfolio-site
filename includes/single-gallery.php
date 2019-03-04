@@ -18,7 +18,6 @@
                     </div>
                 <?php endif; ?>
 
-
                 <?php echo edit_post_link('(Edit)', '<span class="btn btn-lg btn-warning my-2">', '</span>'); ?>
             </article><!-- end .single-gallery -->
 
@@ -28,36 +27,6 @@
 
 </div><!-- end .single-gallery-cpt -->
 
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-
-<script>
-    jQuery(function($) {
-        // https://masonry.desandro.com/layout.html
-        // https://masonry.desandro.com/extras.html#bootstrap
-        $(document).ready(function() {
-            var $grid = $('.wp-block-gallery').masonry({
-                itemSelector: '.blocks-gallery-item',
-                // columnWidth: 200,
-                percentPosition: true,
-                transitionDuration: 750,
-                isAnimated: true,
-                animationOptions: {
-                    duration: 750,
-                    easing: 'linear',
-                    queue: false
-                }
-            });
-
-            $grid.imagesLoaded().progress( function() {
-                $grid.masonry('layout');
-            });
-        });
-
-        console.log("live from the gallery page");
-    });
-
-</script>
 
 
 

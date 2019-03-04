@@ -71,6 +71,11 @@ Genesis custom stylesheet
 - https://placeit.net/c/mockups/?search=book%20cover&f_types=blender&f_devices=Book&h=14
 
 
+**Helpful Links**  
+- 
+
+
+
 
 
 

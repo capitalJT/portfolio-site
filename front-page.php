@@ -109,7 +109,7 @@ function homepage_carousel_loop(){
 	    echo '</div>';
 
 		 echo '<a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">';
-		    echo '<span class="carousel-control-prev-icon" aria-hidden="true"></span';
+		    echo '<span class="carousel-control-prev-icon" aria-hidden="true"></span>';
 		    echo '<span class="sr-only">Previous</span>';
 		 echo '</a>';
 
