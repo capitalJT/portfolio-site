@@ -50,7 +50,8 @@ define( 'CHILD_THEME_VERSION', '2.3.0' );
 add_action( 'wp_enqueue_scripts', 'portfolio_site_enqueue_scripts_styles' );
 function portfolio_site_enqueue_scripts_styles() {
 
-	wp_enqueue_style( 'portfolio-site-fonts', '//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700', array(), CHILD_THEME_VERSION );
+	// Fonts: https://fonts.google.com/?query=sour&selection.family=Playfair+Display|Source+Sans+Pro
+	wp_enqueue_style( 'portfolio-site-fonts', '//fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro', array(), CHILD_THEME_VERSION );
 	wp_enqueue_style( 'dashicons' );
 
 	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';

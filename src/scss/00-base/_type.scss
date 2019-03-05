@@ -1,8 +1,8 @@
 @import "fontface";
 
 //* # The font stack
-$font-family-serif: Helvetica, Arial, serif;
-$font-family-sans-serif: Helvetica, Arial, sans-serif;
+$font-family-serif:  'Playfair Display', serif;
+$font-family-sans-serif: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 $default-font-size: 1.6rem;
 $default-line-height: 1.5;
 $heading-line-height: 1.25;
@@ -17,7 +17,7 @@ $small-font-size: 1.2rem; //12px
 
 %default-heading-font {
   color: $global-font-color;
-  font-family: $font-family-sans-serif;
+  font-family: $font-family-serif;
   text-rendering: optimizeLegibility;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
@@ -29,7 +29,7 @@ $small-font-size: 1.2rem; //12px
 %default-body-font {
   color: $gray-800;
   font-size: $default-font-size;
-  font-family: $font-family-serif;
+  font-family: $font-family-sans-serif;
   letter-spacing: 0;
   @include global-font-weight-med;
 }

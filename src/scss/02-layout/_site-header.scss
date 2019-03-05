@@ -1,11 +1,4 @@
-/* # Site Header
----------------------------------------------------------------------------------------------------- */
-//.site-header .wrap{
-//  @extend .container;
-//}
-
-
-/* ## Title Area
+/* ## Site Header & Title Area
 --------------------------------------------- */
 
 .title-area {
@@ -33,28 +26,6 @@
   width: 100%;
 }
 
-.site-title {
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-.site-title a,
-.site-title a:focus,
-.site-title a:hover {
-  color: #333;
-  text-decoration: none;
-}
-
-.site-description {
-  font-weight: 400;
-  line-height: 1.5;
-}
-
-.site-description,
-.site-title {
-  margin-bottom: 0;
-}
-
 .header-image .site-description,
 .header-image .site-title {
   display: block;
@@ -68,6 +39,30 @@
     padding-top: 10px;
     padding-bottom: 10px;
   }
+}
+
+.site-title{
+  font-size: 2.7rem;
+  font-family: $font-family-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.site-title a,
+.site-title a:focus,
+.site-title a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.site-description,
+.site-title {
+  margin-bottom: 0;
+}
+
+.site-description {
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 .header-image .site-title > a {
