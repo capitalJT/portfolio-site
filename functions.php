@@ -89,13 +89,14 @@ function add_font_awesome_icons() {
 add_action( 'wp_enqueue_scripts', 'custom_style_sheets' );
 function custom_style_sheets() {
     wp_enqueue_style( 'custom-stylesheet-1', CHILD_URL . '/dist/css/main.css', array(), PARENT_THEME_VERSION );
-	wp_enqueue_style( 'custom-stylesheet-2', CHILD_URL . '/dist/css/jt-styles.css', array(), PARENT_THEME_VERSION );
+	// wp_enqueue_style( 'custom-stylesheet-2', CHILD_URL . '/dist/css/jt-styles.css', array(), PARENT_THEME_VERSION );
 }
 
 //* JT - Load custom scripts
 add_action( 'wp_enqueue_scripts', 'custom_scripts' );
 function custom_scripts() {
-	wp_enqueue_script( 'bootstrap-scripts', get_bloginfo( 'stylesheet_directory' ) . '/dist/js/vendor/bootstrap.min.js', array( 'jquery' ), '1.0.0' );
+	wp_enqueue_script( 'bootstrap-script', get_bloginfo( 'stylesheet_directory' ) . '/dist/js/vendor/bootstrap.min.js', array( 'jquery' ), '1.0.0' );
+	wp_enqueue_script( 'cookie-script', 'https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js', array( 'jquery' ), CHILD_THEME_VERSION, false );
 	wp_enqueue_script( 'custom-script', CHILD_URL . '/dist/js/scripts.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
 }
 
@@ -294,11 +295,12 @@ function query_post_type($query) {
     }
 }
 
-/* JT -Code to Display Featured Image on top of the post */
+/* JT - Code to Display Featured Image on top of the post */
 //add_action( 'genesis_entry_content', 'featured_post_image', 8 );
 //function featured_post_image() {
 //	the_post_thumbnail('post-image');
 //}
+
 
 
 //function my_custom_posts_per_page( $query ) {
@@ -306,3 +308,18 @@ function query_post_type($query) {
 //        $query->set( 'posts_per_page', 3 );
 //}
 //add_filter('parse_query', 'my_custom_posts_per_page');
+
+
+
+// JT - removes wpautop completely
+// remove_filter( 'the_content', 'wpautop' );
+
+// JT - remove wpautop from an array of pages. Doesn't work right for inserted 'posts'
+function remove_wpautop(){
+		$pages = array(171, 181);
+	if (is_page($pages)){
+		remove_filter('the_content', 'wpautop');
+	}
+}
+
+add_action('wp_head', 'remove_wpautop');

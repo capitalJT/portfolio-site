@@ -27,6 +27,13 @@
 
 </div><!-- end .single-gallery-cpt -->
 
+<?php $footer = get_post(171); ?>
+<div class="get-post-171">
+	<?php //echo wpautop(do_shortcode($footer->post_content)); ?>
+    <?php echo do_shortcode($footer->post_content); ?>
+</div>
+
+
 
 
 
