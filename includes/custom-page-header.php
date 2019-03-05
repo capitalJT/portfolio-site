@@ -38,12 +38,12 @@ function custom_header_w_img() {
 		</div>
 
 		<style>
-			<?php echo ".$featured_class "; ?> {
+			<?php echo "." . $featured_class; ?> {
 				background-image:url( <?php echo $image_mobile; ?>);
 			}
 
 			@media only screen and (min-width : 768px) {
-                <?php echo ".$featured_class "; ?> {
+                <?php echo "." . $featured_class; ?> {
                     background-image:url(<?php echo $image_desktop;?>);
                     max-height:<?php echo $image_desktop_size . "px"; ?>;
                 }
@@ -56,18 +56,20 @@ function custom_header_w_img() {
 
 		<?php // Provide default image if featured image attachment is not available ?>
 
-		<div class='container <?php echo $featured_class; ?>'>
-			<div class="featured-title-wrapper">
-				<?php do_action('ai_featured_title'); ?>
+		<div class='container p-0 <?php echo $featured_class; ?>'>
+            <div class="bg-overlay">
+                <div class="featured-title-wrapper">
+		            <?php do_action('ai_featured_title'); ?>
 
-				<?php if( get_field('custom_subhead') ): ?>
-					<div class="custom-subhead h2 white"><?php the_field('custom_subhead'); ?></div>
-				<?php endif; ?>
-			</div>
+		            <?php if( get_field('custom_subhead') ): ?>
+                        <div class="custom-subhead h2 text-white"><?php the_field('custom_subhead'); ?></div>
+		            <?php endif; ?>
+                </div>
+            </div>
 		</div>
 
 		<style>
-			<?php echo ".$featured_class "; ?> {
+            <?php echo "." . $featured_class; ?>{
 				background-image:url( "<?php echo get_stylesheet_directory_uri(); ?>/dist/images/default-image.png");
 			}
 		</style>
