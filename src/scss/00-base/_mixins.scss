@@ -15,16 +15,6 @@
   font-weight: 700;
 }
 
-// Font Family
-@mixin global-font-family-sans-serif {
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-@mixin global-font-family-serif {
-  font-family: Helvetica, Arial, serif;
-}
-
-
 @mixin global-card-shadow{
   box-shadow: 0 8px 8px -6px $black_45;
 }

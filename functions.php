@@ -313,14 +313,13 @@ function query_post_type($query) {
 
 
 // JT - removes wpautop completely
-// remove_filter( 'the_content', 'wpautop' );
+remove_filter( 'the_content', 'wpautop' );
 
 // JT - remove wpautop from an array of pages. Doesn't work right for inserted 'posts'
-function remove_wpautop(){
-		$pages = array(171, 181);
-	if (is_page($pages)){
-		remove_filter('the_content', 'wpautop');
-	}
-}
-
-add_action('wp_head', 'remove_wpautop');
+//function remove_wpautop(){
+//		$pages = array(171, 181);
+//	if (is_page($pages)){
+//		remove_filter('the_content', 'wpautop');
+//	}
+//}
+// add_action('wp_head', 'remove_wpautop');

@@ -11,7 +11,7 @@ add_action('genesis_loop', 'single_gallery_loop');
 function single_gallery_loop() {
 
     $gallery_args = array(
-		'post_type'  => 'galleries',
+		'post_type'  => 'image_gallery',
 		'orderby'=> 'menu_order',
 		'order', 'ASC',
 	);

@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Galleries Template
+ * Template Name: Image Gallery Template
  */
 
 // Include custom header
@@ -10,7 +10,7 @@ include ('includes/custom-page-header.php');
 add_action('genesis_loop', 'gallery_loop');
 function gallery_loop(){
     $args = array(
-        'post_type' => 'galleries',
+        'post_type' => 'image_gallery',
         'post_status' => 'publish',
         'orderby' => 'menu_order',
         'order' => 'ASC'

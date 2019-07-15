@@ -141,7 +141,8 @@ function scripts() {
 // It's currently only useful in other functions
 function watch() {
     browserSync.init({
-        proxy: "http://smsite.test/"
+        // proxy: "http://smsite.test/"
+        proxy: "http://portfolio-site.test/"
     });
     gulp.watch(paths.styles.src, style);
     gulp.watch(paths.scripts.src, series(lint, scripts));
